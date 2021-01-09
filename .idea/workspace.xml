@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab006ee7-44c6-4582-86ce-29b8357a8346" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CardRecognition$settings.coverage" NAME="settings Coverage Results" MODIFIED="1570953822349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cardRecognition" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>body</find>
+      <find>/static/腾讯优图AI开放平台 — 顶级的人工智能服务，多元化的行业解决方案</find>
+      <find>/static/腾讯优图AI开放平台 — 顶级的人工智能服务，多元化的行业解决方案06ada7edf9bb1eef0d3d.js</find>
+      <find>&lt;div class=&quot;upload-img&quot;&gt;&lt;div class=&quot;upload&quot;&gt;&lt;div class=&quot;location-img&quot;&gt;&lt;div data-v-2fc1c586=&quot;&quot; class=&quot;location-img-uplaod&quot;&gt;&lt;div data-v-2fc1c586=&quot;&quot; class=&quot;text&quot;&gt;上传本地照片&lt;/div&gt; &lt;input data-v-2fc1c586=&quot;&quot; type=&quot;file&quot; accept=&quot;image/png, image/jpeg, image/jpg&quot; class=&quot;input-file&quot;&gt;&lt;/div&gt;&lt;/div&gt; &lt;div class=&quot;internet-img&quot;&gt;&lt;div class=&quot;el-input&quot;&gt;&lt;!----&gt;&lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; placeholder=&quot;使用网络图片,请粘贴图片URL&quot; class=&quot;el-input__inner&quot;&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/div&gt; &lt;span class=&quot;analyse-btn&quot;&gt;分析&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</find>
+      <find>../../assets</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/static/腾讯优图AI开放平台 — 顶级的人工智能服务，多元化的行业解决方案_files</replace>
+      <replace>/static</replace>
+    </replaceStrings>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1770" />
+    <option name="y" value="-21" />
+    <option name="width" value="1440" />
+    <option name="height" value="832" />
+  </component>
+  <component name="ProjectId" id="1jUKvJOjGLzGo5RdVMiBnB3qaj1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="$USER_HOME$/.virtualenvs/django/bin/python">
+        <option name="mySdkHome" value="$USER_HOME$/.virtualenvs/django/bin/python" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/templates/main" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.cardRecognition">
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cardRecognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cardRecognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cardRecognition/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cardRecognition" type="Python.DjangoServer" factoryName="Django server">
+      <module name="cardRecognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="cardRecognition.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/imgAugmentation/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.cardRecognition" />
+      <item itemvalue="Python.settings" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.settings" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab006ee7-44c6-4582-86ce-29b8357a8346" name="Default Changelist" comment="" />
+      <created>1556181556940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556181556940</updated>
+      <workItem from="1603853461688" duration="404000" />
+      <workItem from="1603854644175" duration="49000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="269" y="78" key="SettingsEditor" timestamp="1603854690655">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="269" y="78" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1603854690655" />
+  </component>
+</project>

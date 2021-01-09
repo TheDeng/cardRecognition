@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1"-->
+      <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0" />
+
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+{#    <!-- Font Awesome CSS-->#}
+{#    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">#}
+{#    <!-- Google fonts - Popppins for copy-->#}
+{#    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">#}
+    <!-- orion icons-->
+    <link rel="stylesheet" href="/static/css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/static/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+  </head>
+
+  <script>
+    function start () {
+
+        $(".loading").hide()
+    }
+</script>
+  <body  onload="start()" style="background-color: #F2F5F9">
+    <!-- navbar-->
+
+<header class="header">
+    <br>
+    <br>
+      <div style="alignment: center"><h1 style="text-align: center;color: #4C84FF">银行卡AI识别系统</h1></div>
+    </header>
+
+
+
+    <style>
+        #jz
+        { margin:0 auto;}
+        .loading{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+
+
+
+
+        }
+        .loading .pic{
+            width: 128px;
+            height: 128px;
+            background: url("/static/img/loading.gif");
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 101;
+        }
+</style>
+
+
+<br>
+<div class="loading">
+   <div class="pic"> </div>
+</div>
+    <div  id="jz"  style="width: 90%; " >
+      <div class="row" style="margin-left: 20px;margin-right: 20px;position: relative;">
+              <div class="col-lg-6">
+                <div class="card mb-4">
+                  <div class="card-header">
+
+
+             <!--<input type="file"  id="upload_file" style="display: none;" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" capture="camera" onchange= "imgPreview(this)">-->
+              <input type="file"  id="upload_file" style="display: none;" accept="image/*"  onchange= "imgPreview(this)">
+
+                          <button class="btn btn-primary" onclick="upload_file.click()">上传图片</button>
+
+
+
+                  </div>
+                  <div class="card-body">
+
+                    <div class="chart-holder" style="text-align:center">
+
+                      <img id="preview" src="./static/img/default.jpeg" style=" width: 500px; height: 300px;"></img>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <button class="btn btn-primary" >结果如下</button>
+                  </div>
+                  <div class="card-body">
+                        <div class="chart-holder" style="text-align:center">
+                            <div style=" width: 500px; height: 300px;">
+                                <br><br><br><br>
+                       <h4 id="result" style="color: #4C84FF"></h4>
+                          <h4 style="color: #4C84FF"></h4>
+                           </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+<br>
+
+
+
+<div >
+		<p style="text-align: center">Copyright &copy; 2019.武汉大学计算机学院 All rights reserved.</p>
+	</div>
+
+
+<script type="text/javascript">{
+
+function imgPreview(fileDom) {
+	//判断是否支持FileReader
+	if(window.FileReader) {
+		var reader = new FileReader();
+	} else {
+		alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+	}
+	//获取文件
+	var file = fileDom.files[0];
+	var imageType = /^image\//;
+	//是否是图片
+	if(!imageType.test(file.type)) {
+		alert("请选择图片！");
+		return;
+	}
+	//读取完成
+	reader.onload = function(e) {
+		//获取图片dom
+		var img = document.getElementById("preview");
+		//图片路径设置为读取的图片
+		img.src = e.target.result;
+	};
+	reader.readAsDataURL(file);
+
+	var formData = new FormData();
+    formData.append('file', file);  //添加图片信息的参数
+    $(".loading").show();
+
+
+     //添加其他参数
+    $.ajax({
+    url: '/upload/',
+    type: 'POST',
+    cache: false, //上传文件不需要缓存
+    data: formData,
+    processData: false, // 告诉jQuery不要去处理发送的数据
+    contentType: false, // 告诉jQuery不要去设置Content-Type请求头
+    success: function (data) {
+        $(".loading").hide();
+        if(data.result==-1){
+            alert("识别失败")
+            return
+        }
+   var h4 = document.getElementById('result');
+   h4.innerHTML=data.result
+   var preview=document.getElementById('preview');
+   preview.src=data.labeled_path;
+   
+    },
+    error: function (data) {
+        $(".loading").hide();
+         alert("识别失败")
+    }
+})
+
+}
+
+
+}
+</script>
+
+
+
+
+
+    <!-- JavaScript files-->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="/static/vendor/chart.js/Chart.min.js"></script>
+    <script src="/static/js/js.cookie.min.js"></script>
+    <script src="/static/js/charts-custom.js"></script>
+    <script src="/static/js/front.js"></script>
+  </body>
+</html>
